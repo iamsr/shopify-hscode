@@ -3,7 +3,7 @@ import { HSCodes, IHSCode } from './HSCode';
 /*
  * @description: Get HSCode from top level or find hscode for particular level in nested case
  */
-export const getLevelHSCode = (parent: string = 'TOTAL') => {
+export const getHSCodeChild = (parent: string = 'TOTAL') => {
   return HSCodes.filter((e: IHSCode) => e.parent == parent);
 };
 
@@ -19,6 +19,13 @@ export const searchHSCodeByName = (hsCodeName: string) => {
  */
 export const searchHSCodeById = (hsCode: string) => {
   return HSCodes.filter(e => e.hscode.includes(hsCode));
+};
+
+/*
+ * @description: get hscode by id
+ */
+export const getHSCode = (id: string) => {
+  return HSCodes.find(e => e.hscode == id);
 };
 
 /*
