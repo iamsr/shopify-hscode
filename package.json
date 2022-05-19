@@ -1,6 +1,6 @@
 {
   "name": "shopify-hscode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The shopify hscode collection lib",
   "main": "./lib/src/index.js",
   "files": [
